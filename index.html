@@ -34,33 +34,5 @@
       <img src=img/logo-655x409.png alt="Dude Software's logo">
       <h1>Hi</h1>
     </section>
-
-    <script>
-      function Floater(element, options) {
-        // The current X and Y deviations.
-        this.xd = 0;
-        this.yd = 0;
-
-
-        this.speed = (options && options.speed) || 0.1;
-
-        // The maximum X and Y deviations. They are 10% of the offset width and
-        // height by default, but can be overriden by the options.xd and
-        // options.yd properties.
-        this.maxXD = (options && options.xd) || (element.offsetWidth  * 0.1);
-        this.maxYD = (options && options.yd) || (element.offsetHeight * 0.1);
-      }
-
-      Floater.prototype.update = function() {
-        if (xd >= this.maxXD) xd = 0;
-        if (yd >= this.maxYD) yd = 0;
-
-        this.xd += this.xd < this.maxXD ? this.speed : -this.speed;
-        this.yd += Math.sin(Math.abs(this.xd) / this.maxXD);
-      };
-
-      Floater.prototype.render = function() {
-      };
-    </script>
   </body>
 </html>
