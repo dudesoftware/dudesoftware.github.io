@@ -1,0 +1,37 @@
+.main {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  overflow: hidden;
+
+  // Force 3D acceleration on mobile devices.
+  transform: translate3d(0, 0, 0);
+
+  h1 {
+    margin-top: 16px;
+    color: #333;
+    text-align: center;
+    font-family: Alef, sans-serif;
+    font-size: 24px;
+  }
+
+  img {
+    display: block;
+    width: 100px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    animation: { name: floating; duration: 3s; iteration-count: infinite; timing-function: ease-in-out }
+  }
+}
+
+@keyframes floating {
+  from { transform: translate(0, 0)    }
+  66%  { transform: translate(0, 16px) }
+  to   { transform: translate(0, -0)   }
+}
