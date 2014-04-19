@@ -26,12 +26,17 @@
     margin-left: auto;
     margin-right: auto;
     border: none;
-    animation: { name: floating; duration: 3s; iteration-count: infinite; timing-function: ease-in-out }
+    animation: {
+      name: floating;
+      duration: 3s;
+      iteration-count: infinite;
+      timing-function: ease-in-out;
+    }
   }
 }
 
 @keyframes floating {
-  from { transform: translate(0, 0)    }
-  66%  { transform: translate(0, 16px) }
-  to   { transform: translate(0, -0)   }
+  from { transform: translateY(0)    }
+  66%  { transform: translateY(16px) }
+  to   { transform: translateY(0)    }
 }

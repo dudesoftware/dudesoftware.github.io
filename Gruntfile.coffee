@@ -1,6 +1,6 @@
-$w = (str) -> str.split(' ')
-
 module.exports = (grunt) ->
+  $w = (str) -> str.split(' ')
+
   grunt.initConfig
     bower:
       install:
