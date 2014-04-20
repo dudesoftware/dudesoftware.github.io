@@ -1,3 +1,5 @@
+@import 'mixin';
+
 .main {
   position: absolute;
   width: 300px;
@@ -19,7 +21,9 @@
     font-size: 24px;
   }
 
-  img {
+  div.logo {
+    @include image-2x('../img/logo-200x320.png', 100px, 160px);
+    background-image: url('../img/logo-100x160.png');
     display: block;
     width: 100px;
     height: 160px;
