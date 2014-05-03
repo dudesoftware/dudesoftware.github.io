@@ -21,7 +21,7 @@
     font-size: 24px;
   }
 
-  div.logo {
+  .logo {
     @include image-2x('../img/logo-200x320.png', 100px, 160px);
     background-image: url('../img/logo-100x160.png');
     display: block;

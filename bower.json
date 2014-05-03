@@ -2,6 +2,7 @@
   "name": "dudesoftware.github.io",
   "version": "0.1.0",
   "dependencies": {
-    "normalize-css": "~2.1.2"
+    "normalize-css": "~2.1.2",
+    "gumby": "~2.6.3"
   }
 }

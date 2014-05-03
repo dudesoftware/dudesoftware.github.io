@@ -1,3 +1,3 @@
-The website of [Dude Software].
+Website of [Dude Software].
 
   [Dude Software]: http://dudesoftware.com/
