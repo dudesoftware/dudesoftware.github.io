@@ -44,7 +44,7 @@ module.exports = (grunt) ->
             ./bower_components/gumby/js/plugins.js
             ./bower_components/gumby/js/main.js
           '''
-      
+
     watch:
       sass:
         files: $w 'sass/*.scss'
