@@ -3,7 +3,7 @@
 
 body {
   background-color: $header-background-color;
-  @include background($header-background-linear-gradient, $header-background-linear-gradient);
+  @include background($header-background-radial-gradient, $header-background-linear-gradient);
 }
 
 .main {
